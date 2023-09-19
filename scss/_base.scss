@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    margin-bottom: 80px;
+  }
+  
+  body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(130, 57, 57) 3%, rgb(0, 58, 123) 38%, rgb(23, 116, 59) 68%, rgb(119, 139, 4) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  }
+  
+  .navMobile {
+    display: none;
+  }
+  
+  
+  // Footer
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: #24C44C;
+    width: 100%;
+  }
+  

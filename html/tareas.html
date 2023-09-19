@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="eProyect - Crea y gestiona tareas de manera eficiente">
+  <title>eProyect - Tareas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../img/eProyect.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+
+        <!-- Menu de navegacion para vista de escritorio (mas de 576px) -->
+        <nav class="navEscritorio">
+          <div class="background">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <ul>
+              <li><img src="../img/eProyect.png" alt="eProyect" class="logoNav"></li>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="tareas.html">Tareas</a></li>
+              <li><a href="equipo.html">Equipo</a></li>
+              <li class="dropdown dropNav">
+                  <button class="dropdown-toggle bg-transparent border-0 ps-2 botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Informes
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Reportes</a></li>
+                    <li><a href="#">Supervision</a></li>
+                    <li></li>
+                    <li><a href="#">Acerca de</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+
+      <!-- Menu de navegacion para vista movil (menos de 576px) -->
+
+      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          <div class="bg-dark p-4">
+              <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="proyectos.html">Proyectos</a></li>
+                  <li><a href="tareas.html">Tareas</a></li>
+                  <li><a href="equipo.html">Equipo</a></li>
+                  <li class="dropdown dropNav">
+                      <button class="dropdown-toggle bg-transparent border-0 ps-2 botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Informes
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Reportes</a></li>
+                        <li><a href="#">Supervision</a></li>
+                        <li></li>
+                        <li><a href="#">Acerca de</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-success navMobile">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+
+
+    <section class="panelPrincipal">
+      <div class="cajaPanel">
+        <div class="estadistica estProyectos">
+            <a href="proyectos.html">
+                <h2>Proyectos Activos</h2>
+                <p>4</p>
+            </a>
+
+        </div>
+        <div class="estadistica estTareas estTareasVencer">
+            <a href="tareas.html">
+                <h2>Tareas a vencer</h2>
+                <p>3</p>
+            </a>
+        </div>
+        <div class="estadistica estTareas">
+            <a href="tareas.html">
+                <h2>Tareas Pendientes</h2>
+            <p>35</p>
+        </a>
+        </div>
+        <div class="estadistica estMiembros">
+            <a href="equipo.html">
+                <h2>Equipos y Miembros</h2>
+            <p>12</p>
+        </a>
+        </div>
+    </div>
+
+
+      <form class="buscarProyecto" action="proyectos.html">
+        <input type="text" name="q" placeholder="Buscar proyectos, tareas o miembros">
+        <button type="submit">Buscar</button>
+      </form>
+
+      <img src="../img/ideaTareas.png" alt="Gestion de proyectos IT" class="imgMain mb-5">
+    </section>
+  </header>
+
+  <main class="mainTareas">
+    <section class="tarjetasPadre row">
+      <article class="col-xl-3 col-md-6 col-sm-12">
+          <div class="card mt-5 ms-3 bg-dark text-white tarjetasHijo" style="width: 18rem;"">
+          <img src=" ../img/tareasImg.png" class="card-img-top mt-3" alt="Nuevo Proyecto">
+              <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Nueva tarea</h5>
+                  <p class="card-text">Crear una nueva tarea en tu proyecto</p>
+                  <a href="#" class="btn btn-success">Crear tarea</a>
+              </div>
+          </div>
+      </article>
+
+      <article class="col-xl-3 col-md-6 col-sm-12">
+          <div class="card mt-5 ms-3 bg-dark text-white tarjetasHijo" style="width: 18rem;"">
+          <img src=" ../img/tareasImg.png" class="card-img-top mt-3" alt="Nuevo Proyecto">
+              <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Edita tareas</h5>
+                  <p class="card-text">Edita tus tareas para ajustar detalles</p>
+                  <a href="#" class="btn btn-success">Editar tarea</a>
+              </div>
+          </div>
+      </article>
+
+      <article class="col-xl-3 col-md-6 col-sm-12">
+          <div class="card mt-5 ms-3 bg-dark text-white tarjetasHijo" style="width: 18rem;"">
+          <img src=" ../img/tareasImg.png" class="card-img-top mt-3" alt="Nuevo Proyecto">
+              <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Asignar responsable</h5>
+                  <p class="card-text">Asigna y edita las opciones de asignación</p>
+                  <a href="#" class="btn btn-success">Asignar/editar</a>
+              </div>
+          </div>
+      </article>
+
+      <article class="col-xl-3 col-md-6 col-sm-12">
+          <div class="card mt-5 ms-3 bg-dark text-white tarjetasHijo" style="width: 18rem;"">
+          <img src=" ../img/tareasImg.png" class="card-img-top mt-3" alt="Nuevo Proyecto">
+              <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Grupos de tareas</h5>
+                  <p class="card-text">Crea grupos de tareas recurrentes en tus proyectos</p>
+                  <a href="#" class="btn btn-success">Crear grupo</a>
+              </div>
+          </div>
+      </article>
+
+  </section>
+    <section class="intro mb-5">
+      <div class="gradient-custom-2 h-100">
+        <div class="mask d-flex align-items-center h-100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="table-responsive mt-5">
+                  <img src="../img/alerta.png" alt="Alerta">
+                  <table class="table table-dark table-bordered mb-0 tablaAlerta">
+                    <thead>
+                      <tr>
+                        <th scope="col">Tarea proxima a vencer</th>
+                        <th scope="col">Fecha vencimiento</th>
+                        <th scope="col">Proyecto</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Responsable</th>
+                        <th scope="col" class="columnaArea">Area</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="">Creacion de aplicacion web para envio de formularios</a></th>
+                        <td>10/9/2023</td>
+                        <td>Movistar - Reporteria</td>
+                        <td>En curso</td>
+                        <td>Eddie Van Halen</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Actualizacion de SO</a></th>
+                        <td>11/9/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Freddy Mercury</td>
+                        <td class="columnaArea">Infraestructura</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Penetration test</a></th>
+                        <td>9/9/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Cindy Lauper</td>
+                        <td class="columnaArea">Seguridad Informatica</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Desarrollo de middleware</a></th>
+                        <td>15/9/2023</td>
+                        <td>Contoso</td>
+                        <td>En curso</td>
+                        <td>David Bowie</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="intro mt-5">
+      <div class="gradient-custom-2 h-100">
+        <div class="mask d-flex align-items-center h-100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="table-responsive">
+                  <img src="../img/tareas.png" alt="Alerta">
+                  <table class="table table-dark table-bordered mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Tarea</th>
+                        <th scope="col">Fecha vencimiento</th>
+                        <th scope="col">Proyecto</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Responsable</th>
+                        <th scope="col" class="columnaArea">Area</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="">Creacion de aplicacion web para envio de formularios</a></th>
+                        <td>10/10/2023</td>
+                        <td>Movistar - Reporteria</td>
+                        <td>En curso</td>
+                        <td>Eddie Van Halen</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Actualizacion de SO</a></th>
+                        <td>11/10/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Freddy Mercury</td>
+                        <td class="columnaArea">Infraestructura</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Penetration test</a></th>
+                        <td>9/10/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Cindy Lauper</td>
+                        <td class="columnaArea">Seguridad Informatica</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Desarrollo de middleware</a></th>
+                        <td>15/10/2023</td>
+                        <td>Contoso</td>
+                        <td>En curso</td>
+                        <td>David Bowie</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Creacion de aplicacion web para envio de formularios</a></th>
+                        <td>10/10/2023</td>
+                        <td>Movistar - Reporteria</td>
+                        <td>En curso</td>
+                        <td>Eddie Van Halen</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Actualizacion de SO</a></th>
+                        <td>11/10/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Freddy Mercury</td>
+                        <td class="columnaArea">Infraestructura</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Penetration test</a></th>
+                        <td>9/10/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Cindy Lauper</td>
+                        <td class="columnaArea">Seguridad Informatica</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Desarrollo de middleware</a></th>
+                        <td>15/10/2023</td>
+                        <td>Contoso</td>
+                        <td>En curso</td>
+                        <td>David Bowie</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Creacion de aplicacion web para envio de formularios</a></th>
+                        <td>10/10/2023</td>
+                        <td>Movistar - Reporteria</td>
+                        <td>En curso</td>
+                        <td>Eddie Van Halen</td>
+                        <td class="columnaArea">Desarrollo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Actualizacion de SO</a></th>
+                        <td>11/10/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Freddy Mercury</td>
+                        <td class="columnaArea">Infraestructura</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Penetration test</a></th>
+                        <td>9/10/2023</td>
+                        <td>Certificacion ISO 27001</td>
+                        <td>En curso</td>
+                        <td>Cindy Lauper</td>
+                        <td class="columnaArea">Seguridad Informatica</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="">Desarrollo de middleware</a></th>
+                        <td>15/10/2023</td>
+                        <td>Contoso</td>
+                        <td>En curso</td>
+                        <td>David Bowie</td>
+                        <td class="columnaArea" >Desarrollo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carouselTareas">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/carouselTareas1.png" class="d-block w-100" alt="Administra tareas">
+            <div class="carousel-caption d-md-block">
+              <h5>Crea y administra tareas sencillamente</h5>
+              <p>Con eProyect podras optimizar los tiempos en tus tareas diarias</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carouselTareas2.png" class="d-block w-100" alt="Gestiona proyectos">
+            <div class="carousel-caption d-md-block">
+              <h5>Gestiona grandes proyectos</h5>
+              <p>Crea proyectos y distribuye las responsabilidades entre las distintas areas involucradas</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carouselTareas3.png" class="d-block w-100" alt="Reduce costos">
+            <div class="carousel-caption d-md-block">
+              <h5>Reduce los costos</h5>
+              <p>Genera mas, en menos tiempo</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Atras</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 eProyect. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
