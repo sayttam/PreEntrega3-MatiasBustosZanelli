@@ -21,13 +21,18 @@ body {
   display: none;
 }
 
+.desplegableContenido {
+  display: none;
+}
+
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   background-color: black;
   color: #24C44C;
   width: 100%;
+  height: 25px;
 }
 
 /* animacion body */
@@ -541,6 +546,11 @@ nav {
   z-index: 99;
 }
 
+.dropdown-menu li {
+  display: flex;
+  flex-direction: column;
+}
+
 .dropNav {
   margin-left: -10px;
 }
@@ -707,206 +717,6 @@ button:hover {
   background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(7, 13, 128) 100%);
 }
 
-/* index.html */
-.cajaRecientes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  padding: auto;
-  margin-bottom: 50px;
-  position: relative;
-  top: 100px;
-  width: 85%;
-  background-color: wheat;
-  box-shadow: 5px 5px 5px;
-  padding-left: 5px;
-}
-
-.cajaRecientesTitulo {
-  grid-column: 1/3;
-}
-
-.cajaNegra {
-  width: 96%;
-  border: 1px black solid;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding-left: 5px;
-  background-color: black;
-  color: #24C44C;
-  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 5px;
-}
-
-aside {
-  display: block;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-.iframeIndex {
-  position: relative;
-  top: 100px;
-  width: 70%;
-  left: 15%;
-  margin-bottom: 100px;
-}
-
-/* proyectos.html */
-.cajaNegraProyectos {
-  position: relative;
-  width: 98.7%;
-  height: auto;
-  text-align: center;
-  left: 1px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.cajaProyectos {
-  background-color: wheat;
-  position: relative;
-  top: 100px;
-  left: 10%;
-  box-shadow: 5px 5px 5px;
-  width: 80%;
-  margin-bottom: 50px;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.cajaProyectos h3 {
-  text-align: center;
-  font-size: 25px;
-  height: fit-content;
-  margin-top: 30px;
-}
-.cajaProyectos img {
-  height: 50px;
-  position: relative;
-  top: 20px;
-  margin-bottom: 20px;
-  left: 45%;
-}
-.cajaProyectos p {
-  margin: 20px 15px;
-}
-
-.botonesProyectos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-.botonesProyectos button {
-  background-color: #24C44C;
-  height: 35px;
-  padding: 1px 20px;
-  margin: 5px 5px;
-  font-weight: bold;
-  transition: 750ms;
-}
-.botonesProyectos button:hover {
-  background-color: #2b2b2b;
-  color: #24C44C;
-  transform: scale(1.1);
-}
-
-.tarjetasPadre {
-  width: fit-content;
-  margin: auto;
-  padding: auto;
-}
-.tarjetasPadre img {
-  margin: auto;
-  margin-top: 5px;
-  height: 100px;
-  width: 100px;
-}
-
-.calendario {
-  display: block;
-  position: relative;
-  padding: 100px;
-}
-.calendario iframe {
-  height: 2000px;
-  width: 100%;
-  background-color: wheat;
-}
-
-/* tareas.html */
-.intro img {
-  height: 50px;
-}
-
-.tablaAlerta th, .tablaAlerta td {
-  background-color: rgba(255, 0, 0, 0.9);
-}
-
-.tareas img {
-  height: 50px;
-}
-
-.carouselTareas {
-  margin-top: 70px;
-  padding: 150px;
-}
-.carouselTareas p {
-  text-shadow: 2px 2px black;
-}
-
-h5 {
-  text-shadow: 2px 2px black;
-}
-
-.mainTareas a {
-  color: white;
-}
-
-/* equipo.html */
-.areas {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-top: 40px;
-}
-.areas article {
-  margin-bottom: 30px;
-  border: 3px rgba(0, 0, 0, 0.39) solid;
-  background-color: rgba(245, 222, 179, 0.37);
-  border-radius: 50px;
-  width: fit-content;
-  padding: 10px;
-  transition: 1s;
-}
-.areas article:hover {
-  padding: 10px 40px;
-}
-.areas article:hover img {
-  transform: scale(1.1);
-  padding-top: 30px;
-}
-.areas article:hover h3 {
-  margin-top: 30px;
-}
-.areas article h3 {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px #1a2e1c;
-  font-family: "Roboto", sans-serif;
-  font-weight: 20px;
-  transition: 1s;
-}
-.areas article img {
-  height: 600px;
-  border-radius: 50px;
-  transition: 1s;
-}
-
-/*******************************************************************************************/
 /* Responsive */
 @media (max-width: 400px) {
   .navEscritorio {
@@ -1065,12 +875,16 @@ h5 {
     margin-top: 35px;
     font-size: small;
   }
+  .areas article img {
+    display: none !important;
+  }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .estadistica h2 {
     font-size: 23px;
   }
-  header a, header button {
+  header a,
+  header button {
     font-size: small;
   }
   header li {
@@ -1185,7 +999,8 @@ h5 {
     padding-left: 3px;
     padding-right: 3px;
   }
-  nav a, button {
+  nav a,
+  button {
     margin-left: 10px;
   }
   .buscarProyecto input {
@@ -1218,7 +1033,8 @@ h5 {
     padding-left: 3px;
     padding-right: 3px;
   }
-  nav a, button {
+  nav a,
+  button {
     margin-left: 20px;
   }
   .buscarProyecto input {
@@ -1239,9 +1055,226 @@ h5 {
   .buscarProyecto button {
     left: 19%;
   }
-  nav a, button {
+  nav a,
+  button {
     margin-left: 20px;
   }
 }
+/* index.html */
+.cajaRecientes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding: auto;
+  margin-bottom: 50px;
+  position: relative;
+  top: 100px;
+  width: 85%;
+  background-color: wheat;
+  box-shadow: 5px 5px 5px;
+  padding-left: 5px;
+}
+
+.cajaRecientesTitulo {
+  grid-column: 1/3;
+}
+
+.cajaNegra {
+  width: 96%;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  background-color: black;
+  color: #24C44C;
+  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 5px;
+}
+
+aside {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.iframeIndex {
+  position: relative;
+  top: 100px;
+  width: 70%;
+  left: 15%;
+  margin-bottom: 100px;
+}
+
+/* proyectos.html */
+.cajaNegraProyectos {
+  position: relative;
+  width: 98.7%;
+  height: auto;
+  text-align: center;
+  left: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cajaProyectos {
+  background-color: wheat;
+  position: relative;
+  top: 100px;
+  left: 10%;
+  box-shadow: 5px 5px 5px;
+  width: 80%;
+  margin-bottom: 50px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cajaProyectos h3 {
+  text-align: center;
+  font-size: 25px;
+  height: fit-content;
+  margin-top: 30px;
+}
+.cajaProyectos img {
+  height: 50px;
+  position: relative;
+  top: 20px;
+  margin-bottom: 20px;
+  left: 45%;
+}
+.cajaProyectos p {
+  margin: 20px 15px;
+}
+
+.botonesProyectos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.botonesProyectos button {
+  background-color: #24C44C;
+  height: 35px;
+  padding: 1px 20px;
+  margin: 5px 5px;
+  font-weight: bold;
+  transition: 750ms;
+}
+.botonesProyectos button:hover {
+  background-color: #2b2b2b;
+  color: #24C44C;
+  transform: scale(1.1);
+}
+
+.tarjetasPadre {
+  width: fit-content;
+  margin: auto;
+  padding: auto;
+}
+.tarjetasPadre img {
+  margin: auto;
+  margin-top: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+.calendario {
+  display: block;
+  position: relative;
+  padding: 100px;
+}
+.calendario iframe {
+  height: 2000px;
+  width: 100%;
+  background-color: wheat;
+}
+
+/* tareas.html */
+.intro img {
+  height: 50px;
+}
+
+.tablaAlerta th,
+.tablaAlerta td {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.tareas img {
+  height: 50px;
+}
+
+.carouselTareas {
+  margin-top: 70px;
+  padding: 150px;
+}
+.carouselTareas p {
+  text-shadow: 2px 2px black;
+}
+
+h5 {
+  text-shadow: 2px 2px black;
+}
+
+.mainTareas a {
+  color: white;
+}
+
+/* equipo.html */
+.areas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.areas article {
+  margin-bottom: 30px;
+  border: 3px rgba(0, 0, 0, 0.39) solid;
+  background-color: rgba(245, 222, 179, 0.37);
+  border-radius: 50px;
+  width: fit-content;
+  padding: 10px;
+  transition: 1s;
+}
+.areas article:hover {
+  padding: 10px 40px;
+}
+.areas article:hover img {
+  transform: scale(1.1);
+  padding-top: 30px;
+}
+.areas article:hover h3 {
+  margin-top: 30px;
+  text-shadow: none;
+}
+.areas article:hover .desplegableContenido {
+  display: flex;
+  flex-direction: column;
+}
+.areas article:hover .desplegableContenido h5 {
+  text-shadow: none;
+}
+.areas article:hover .desplegableContenido div {
+  margin-bottom: 20px;
+}
+.areas article:hover .tituloDesplegable {
+  display: none;
+  position: fixed;
+}
+.areas article h3 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2235294118);
+  font-family: "Roboto", sans-serif;
+  font-weight: 20px;
+  transition: 1s;
+}
+.areas article img {
+  height: 400px;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+/*******************************************************************************************/
 
 /*# sourceMappingURL=styles.css.map */

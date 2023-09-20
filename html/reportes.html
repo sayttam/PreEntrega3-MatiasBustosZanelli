@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eProyect - Equipo de trabajo</title>
+    <meta name="description" content="eProyect - ">
+    <title>Reportes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/eProyect.png" type="image/x-icon">
 </head>
-
 <body>
     <header>
 
-        <!-- Menu de navegacion para vista de escritorio (mas de 576px) -->
-        <nav class="navEscritorio">
+          <!-- Menu de navegacion para vista de escritorio (mas de 576px) -->
+          <nav class="navEscritorio">
             <div class="background">
                 <span></span>
                 <span></span>
@@ -133,136 +132,54 @@
         </section>
     </header>
 
-    <main>
-        <section class="areas">
-            <article class="desplegable">
-                <img src="../img/teamDesa.jpg" alt="Team Desarrollo" clas="imgAreas">
-                <h3>Desarrollo</h3>
-                <div class="desplegableContenido">
-                    <div>
-                        <h4>David Bowie</h4>
-                        <h5>Gerente de Desarrollo</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Coordinador de Desarrollo</h5>
-                    </div>
-                    <div>
-                        <h4>Juan Perez</h4>
-                        <h5>Analista de Desarrollo</h5>
-                    </div>
-                    <div>
-                        <h4>Sabrina Cabrera</h4>
-                        <h5>Analista de Desarrollo</h5>
-                    </div>
-                </div>
-            </article>
-
-            <article class="desplegable">
-                <img src="../img/teamInfra.jpg" alt="Team Infraestructura">
-                <h3>Infraestructura</h3>
-                <div class="desplegableContenido">
-                    <div>
-                        <h4>Freddy Mercury</h4>
-                        <h5>Gerente</h5>
-                    </div>
-                    <div>
-                        <h4>Renata Linares</h4>
-                        <h5>Coordinador</h5>
-                    </div>
-                    <div>
-                        <h4>Barry Allen</h4>
-                        <h5>Analista</h5>
-                    </div>
-                    <div>
-                        <h4>Federico Costa</h4>
-                        <h5>Analista</h5>
-                    </div>
-                </div>
-            </article>
-
-            <article class="desplegable">
-                <img src="../img/teamSeguridad.jpg" alt="Seguridad Informatica">
-                <h3 class="tituloDesplegable">Seguridad Informática</h3>
-                <div class="desplegableContenido">
-                    <h3>Seguridad Informática</h3>
-                    <div>
-                        <h4>Armando Paredes</h4>
-                        <h5>Gerente</h5>
-                    </div>
-                    <div>
-                        <h4>Ricardo Tapia</h4>
-                        <h5>Coordinador</h5>
-                    </div>
-                    <div>
-                        <h4>Marty Friedman</h4>
-                        <h5>Analista</h5>
-                    </div>
-                    <div>
-                        <h4>Diana de Temiscira</h4>
-                        <h5>Analista</h5>
-                    </div>
-                </div>
-            </article>
-
-            <article class="desplegable">
-                <img src="../img/teamIA.jpg" alt="Team IA">
-                <h3>IA</h3>
-                <div class="desplegableContenido">
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Gerente</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Coordinador</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Analista</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Analista</h5>
-                    </div>
-                </div>
-            </article>
-
-            <article class="desplegable">
-                <img src="../img/teamRedes.jpg" alt="">
-                <h3>Redes</h3>
-                <div class="desplegableContenido">
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Gerente</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Coordinador</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Analista</h5>
-                    </div>
-                    <div>
-                        <h4>Eddie Van Halen</h4>
-                        <h5>Analista</h5>
-                    </div>
-                </div>
-            </article> 
-        </section>
-    </main>
-
+    <section class="carouselTareas">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/carouselTareas1.png" class="d-block w-100" alt="Administra tareas">
+              <div class="carousel-caption d-md-block">
+                <h5>Crea y administra tareas sencillamente</h5>
+                <p>Con eProyect podras optimizar los tiempos en tus tareas diarias</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carouselTareas2.png" class="d-block w-100" alt="Gestiona proyectos">
+              <div class="carousel-caption d-md-block">
+                <h5>Gestiona grandes proyectos</h5>
+                <p>Crea proyectos y distribuye las responsabilidades entre las distintas areas involucradas</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carouselTareas3.png" class="d-block w-100" alt="Reduce costos">
+              <div class="carousel-caption d-md-block">
+                <h5>Reduce los costos</h5>
+                <p>Genera mas, en menos tiempo</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Atras</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+  
 
     <footer>
         <p>&copy; 2023 eProyect. Todos los derechos reservados.</p>
     </footer>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
