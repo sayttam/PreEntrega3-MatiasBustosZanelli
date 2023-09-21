@@ -128,15 +128,15 @@
                 <button type="submit">Buscar</button>
             </form>
 
-            <figure>
-                <img src="../img/ideaEquipo.png" alt="Gestion de proyectos IT" class="imgMain mb-5">
-            </figure>
         </section>
     </header>
 
     <main>
         <form class="generarReporte">
+            <h3>Generacion de reportes</h3>
+
             <div class="formReporte">
+
                 <div>
                     <p>Proyecto:</p>
                     <select name="proyecto" id="proyecto">
@@ -144,6 +144,7 @@
                         <option value="proyecto2">Proyecto XYZ</option>
                     </select>
                 </div>
+
                 <div>
                     <p>Tareas:</p>
                     <select name="tarea" id="tarea" size="4" multiple>
@@ -151,19 +152,27 @@
                         <option value="proyecto2">Proyecto XYZ</option>
                     </select>
                 </div>
+
                 <div>
                     <p>Fecha desde:</p>
                     <input type="date" name="desde">
                 </div>
+                
                 <div>
                     <p>Fecha hasta:</p>
                     <input type="date" name="hasta">
                 </div>
+            </div>
 
-                <div>
-                    <button name="generar">Generar</button>
+            <div>
+                <input type="checkbox" class="botonReporte" id="botonReporte">
+                <label for="botonReporte" class="botonReporte botonLabel"><p>Generar</p></label>
+                <div class="reporteGenerado">
+                    <a href="../pdf/reporte.pdf">Reporte generado</a>
                 </div>
             </div>
+
+
         </form>
 
     </main>

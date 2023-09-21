@@ -6,6 +6,7 @@
 
 main {
   margin-bottom: 80px;
+  min-height: 500px;
 }
 
 body {
@@ -23,6 +24,10 @@ body {
 }
 
 .desplegableContenido {
+  display: none;
+}
+
+.reporteGenerado {
   display: none;
 }
 
