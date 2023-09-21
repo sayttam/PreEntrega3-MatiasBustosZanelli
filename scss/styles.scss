@@ -3,7 +3,7 @@
 @import 'header';
 @import 'mixin';
 @import 'variables';
-@import 'responsive';
+
 
 
 
@@ -176,12 +176,12 @@ aside {
   padding: 150px;
 
   p {
-    text-shadow: 2px 2px black;
+    text-shadow: $sombra-texto;
   }
 }
 
 h5 {
-  text-shadow: 2px 2px black;
+  text-shadow: $sombra-texto;
 }
 
 .mainTareas a {
@@ -193,8 +193,7 @@ h5 {
 /* equipo.html */
 
 .areas {
-  display: flex;
-  flex-direction: column;
+  @include flexColumna();
   text-align: center;
   align-items: center;
   margin-top: 40px;
@@ -222,8 +221,7 @@ h5 {
       }
 
       .desplegableContenido {
-        display: flex;
-        flex-direction: column;
+        @include flexColumna();
 
         h5 {
           text-shadow: none;
@@ -256,7 +254,46 @@ h5 {
       transition: 1s;
     }
 
+    .areas article img {
+      height: 200px;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+//reportes.html
+
+.generarReporte {
+  margin: 50px 20px;
+  border: 2px black solid;
+  border-radius: 5px;
+  height: 300px;
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+  background-color: rgba(245, 222, 179, 0.37);
+}
+
+.formReporte {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  label {
+    margin-right: 10px;
+  }
+
+  select {
+    margin-right: 50px;
+    width: 200px;
+  }
+
+  .generarReporte {
+    grid-column: -5 / -1;
   }
 }
 
 /*******************************************************************************************/
+
+@import 'responsive';
