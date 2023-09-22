@@ -98,23 +98,23 @@
       }
 
       .formReporte {
-        grid-template-columns: 1fr;
+          grid-template-columns: 1fr;
       }
 
       .generarReporte {
-        height: 600px;
+          height: 600px;
 
-        h3 {
-            font-size: large;
-        }
+          h3 {
+              font-size: large;
+          }
 
-        div:nth-child(1) {
-            margin-bottom: 20px;
-        }
+          div:nth-child(1) {
+              margin-bottom: 20px;
+          }
 
-        div:nth-child(4) {
-            margin-bottom: 50px;
-        }
+          div:nth-child(4) {
+              margin-bottom: 50px;
+          }
       }
   }
 
@@ -205,25 +205,30 @@
           height: 250px;
       }
 
-      
+
       .formReporte {
-        grid-template-columns: 1fr;
+          grid-template-columns: 1fr;
       }
 
       .generarReporte {
-        height: 600px;
+          height: 600px;
 
-        h3 {
-            font-size: large;
-        }
+          h3 {
+              font-size: large;
+          }
 
-        div:nth-child(1) {
-            margin-bottom: 20px;
-        }
+          div:nth-child(1) {
+              margin-bottom: 20px;
+          }
 
-        div:nth-child(4) {
-            margin-bottom: 50px;
-        }
+          div:nth-child(4) {
+              margin-bottom: 50px;
+          }
+      }
+
+      .acercaDe {
+        flex-direction: column;
+        text-align: center;
       }
   }
 
@@ -295,25 +300,26 @@
 
       .columnaArea {
           display: none;
-      }      
+      }
+
       .formReporte {
-        grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
       }
 
       .generarReporte {
-        height: 500px;
+          height: 500px;
 
-        h3 {
-            font-size: large;
-        }
+          h3 {
+              font-size: large;
+          }
 
-        div:nth-child(1) {
-            margin-bottom: 20px;
-        }
+          div:nth-child(1) {
+              margin-bottom: 20px;
+          }
 
-        div:nth-child(4) {
-            margin-bottom: 50px;
-        }
+          div:nth-child(4) {
+              margin-bottom: 50px;
+          }
       }
   }
 
@@ -374,25 +380,30 @@
           padding-right: 25px;
       }
 
-            
+
       .formReporte {
-        grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
       }
 
       .generarReporte {
-        height: 450px;
+          height: 450px;
 
-        h3 {
-            font-size: large;
-        }
+          h3 {
+              font-size: large;
+          }
 
-        div:nth-child(1) {
-            margin-bottom: 20px;
-        }
+          div:nth-child(1) {
+              margin-bottom: 20px;
+          }
 
-        div:nth-child(4) {
-            margin-bottom: 50px;
-        }
+          div:nth-child(4) {
+              margin-bottom: 50px;
+          }
+      }
+
+      .carouselReportes {
+          margin-top: 140px;
+          padding: 50px;
       }
   }
 

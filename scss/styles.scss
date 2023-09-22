@@ -3,7 +3,7 @@
 @import 'header';
 @import 'mixin';
 @import 'variables';
-
+@import 'footer';
 
 
 
@@ -201,7 +201,7 @@ h5 {
   article {
     margin-bottom: 30px;
     border: 3px rgba(0, 0, 0, 0.39) solid;
-    background-color: rgba(245, 222, 179, 0.37);
+    background-color: $bg-cajablanca;
     border-radius: 50px;
     width: fit-content;
     padding: 10px;
@@ -273,8 +273,8 @@ h5 {
   height: 300px;
   color: black;
   font-weight: bolder;
-  background-color: rgba(245, 222, 179, 0.37);
-  height: 300px;
+  background-color: $bg-cajablanca;
+  height: 350px;
 
   p {
     text-decoration: underline;
@@ -365,6 +365,12 @@ h5 {
 
 }
 
+.carouselReportes {
+  padding: 30px;
+  position: relative;
+  bottom: 150px;
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -372,8 +378,74 @@ h5 {
 
 
 .formContacto {
+  display: block;
+  margin: auto;
+  padding: auto;
   position: relative;
+  text-align: center;
+  width: fit-content;
   top: 60px;
+  background-color: $bg-cajablanca;
+
+  input,
+  textarea {
+    width: 300px;
+  }
+}
+
+.enviarContacto {
+  height: 45px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: $color-eproyect;
+  border-color: $color-light;
+  border-style: solid;
+  border-radius: 10px;
+  width: 320px;
+  cursor: pointer;
+}
+
+.colocarNombre {
+  margin-right: 10px;
+}
+
+.colocarEmail {
+  margin-right: 27px;
+}
+
+.colocarTelefono {
+  margin-right: 8px;
+}
+
+.colocarWebsite {
+  margin-right: 3px
+}
+
+.colocarAsunto {
+  margin-right: 19px
+}
+
+.colocarMensaje {
+  margin-right: 8px;
+}
+
+.acercaDe {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-light;
+
+  p {
+    margin-top: 100px;
+  }
+}
+
+.imgAbout {
+  height: 200px;
+  margin-top: 70px;
 }
 
 /*******************************************************************************************/

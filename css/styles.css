@@ -30,16 +30,6 @@ body {
   display: none;
 }
 
-footer {
-  position: static;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  color: #24C44C;
-  width: 100%;
-  height: 25px;
-}
-
 /* animacion body */
 @keyframes gradient {
   0% {
@@ -722,6 +712,16 @@ button:hover {
   background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(7, 13, 128) 100%);
 }
 
+footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: #24C44C;
+  width: 100%;
+  height: 25px;
+}
+
 /* index.html */
 .cajaRecientes {
   display: grid;
@@ -950,7 +950,7 @@ h5 {
   color: black;
   font-weight: bolder;
   background-color: rgba(245, 222, 179, 0.37);
-  height: 300px;
+  height: 350px;
 }
 .generarReporte p {
   text-decoration: underline;
@@ -1028,9 +1028,79 @@ h5 {
   padding-top: 5px;
 }
 
-.formContacto {
+.carouselReportes {
+  padding: 30px;
   position: relative;
+  bottom: 150px;
+}
+
+.formContacto {
+  display: block;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  text-align: center;
+  width: fit-content;
   top: 60px;
+  background-color: rgba(245, 222, 179, 0.37);
+}
+.formContacto input,
+.formContacto textarea {
+  width: 300px;
+}
+
+.enviarContacto {
+  height: 45px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #24C44C;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 10px;
+  width: 320px;
+  cursor: pointer;
+}
+
+.colocarNombre {
+  margin-right: 10px;
+}
+
+.colocarEmail {
+  margin-right: 27px;
+}
+
+.colocarTelefono {
+  margin-right: 8px;
+}
+
+.colocarWebsite {
+  margin-right: 3px;
+}
+
+.colocarAsunto {
+  margin-right: 19px;
+}
+
+.colocarMensaje {
+  margin-right: 8px;
+}
+
+.acercaDe {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+.acercaDe p {
+  margin-top: 100px;
+}
+
+.imgAbout {
+  height: 200px;
+  margin-top: 70px;
 }
 
 /*******************************************************************************************/
@@ -1228,6 +1298,10 @@ h5 {
   .generarReporte div:nth-child(4) {
     margin-bottom: 50px;
   }
+  .acercaDe {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .estadistica h2 {
@@ -1358,6 +1432,10 @@ h5 {
   }
   .generarReporte div:nth-child(4) {
     margin-bottom: 50px;
+  }
+  .carouselReportes {
+    margin-top: 140px;
+    padding: 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {

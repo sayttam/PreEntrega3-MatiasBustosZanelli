@@ -17,7 +17,6 @@
 
 <body>
     <header>
-
         <!-- Menu de navegacion para vista de escritorio (mas de 576px) -->
         <nav class="navEscritorio">
             <div class="background">
@@ -63,7 +62,7 @@
 
         <!-- Menu de navegacion para vista movil (menos de 576px) -->
 
-        <div class="collapse position-fixed" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
             <div class="bg-dark p-4">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -83,7 +82,7 @@
                 </ul>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-success navMobile position-fixed">
+        <nav class="navbar navbar-dark bg-success navMobile">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -92,75 +91,72 @@
                 </button>
             </div>
         </nav>
-
     </header>
 
     <main>
-        <div class="formContacto">
+        <section>
+            <div class="acercaDe">
+                <img src="../img/eProyect.png" alt="eProyect" class="imgAbout">
+                <p>
+                    Un sistema web de gestión de proyectos IT es una herramienta esencial en el mundo tecnológico actual. Ofrece una plataforma centralizada para planificar, ejecutar y supervisar proyectos de tecnología de la información de manera eficiente. Este sistema facilita la asignación de tareas, seguimiento de hitos, gestión de recursos y colaboración en tiempo real, lo que aumenta la productividad del equipo. Además, proporciona informes y análisis detallados para evaluar el progreso y tomar decisiones informadas. La seguridad y el control de acceso garantizan la protección de datos confidenciales. En resumen, un sistema web de gestión de proyectos IT optimiza la ejecución de proyectos, mejora la comunicación y maximiza los resultados en el siempre cambiante panorama de la tecnología.</p>
+            </div>
+        </section>
+
+        <section class="formContacto">
 
             <div class="formulario">
                 <h1>Formulario de contacto</h1>
                 <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
 
-                <form action="submeter-formulario.php" method="post">
-
-
-                    <p>
-                        <label for="nombre" class="colocar_nombre">Nombre
-                            <span class="obligatorio">*</span>
+                <form class="formCampos">
+                    <div>
+                        <label for="nombre" class="colocarNombre">Nombre
                         </label>
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        <input type="text" name="introducirNombre" id="nombre" required="obligatorio"
                             placeholder="Escribe tu nombre">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="email" class="colocar_email">Email
-                            <span class="obligatorio">*</span>
+                    <div>
+                        <label for="email" class="colocarEmail">Email
                         </label>
                         <input type="email" name="introducir_email" id="email" required="obligatorio"
                             placeholder="Escribe tu Email">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="telefone" class="colocar_telefono">Teléfono
+                    <div>
+                        <label for="telefone" class="colocarTelefono">Teléfono
                         </label>
                         <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="website" class="colocar_website">Sitio web
-                        </label>
-                        <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                    </p>
 
-                    <p>
-                        <label for="asunto" class="colocar_asunto">Asunto
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-                            placeholder="Escribe un asunto">
-                    </p>
-
-                    <p>
-                        <label for="mensaje" class="colocar_mensaje">Mensaje
-                            <span class="obligatorio">*</span>
-                        </label>
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                            placeholder="Deja aquí tu comentario..."></textarea>
-                    </p>
-
-                    <button type="submit" name="enviar_formulario" id="enviar">
-                        <p>Enviar</p>
-                    </button>
-
-                    <p class="aviso">
-                        <span class="obligatorio"> * </span>los campos son obligatorios.
-                    </p>
-
-                </form>
+                    <label for="website" class="colocarWebsite">Sitio web
+                    </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
             </div>
-        </div>
+
+            <div>
+                <label for="asunto" class="colocarAsunto">Asunto
+                </label>
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                    placeholder="Escribe un asunto">
+            </div>
+
+            <div>
+                <label for="mensaje" class="colocarMensaje">Mensaje
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja aquí tu comentario..."></textarea>
+            </div>
+            <div>
+                <button type="submit" name="enviar_formulario" id="enviar" class="enviarContacto">
+                    <p>Enviar</p>
+                </button>
+            </div>
+            </form>
+            </div>
+        </section>
     </main>
 
     <footer>
