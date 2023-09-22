@@ -1028,6 +1028,11 @@ h5 {
   padding-top: 5px;
 }
 
+.formContacto {
+  position: relative;
+  top: 60px;
+}
+
 /*******************************************************************************************/
 /* Responsive */
 @media (max-width: 400px) {
