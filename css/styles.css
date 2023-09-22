@@ -1203,6 +1203,13 @@ h5 {
   .generarReporte div:nth-child(4) {
     margin-bottom: 50px;
   }
+  .acercaDe {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer {
+    font-size: 15px;
+  }
 }
 @media (min-width: 401px) and (max-width: 576px) {
   .navEscritorio {
@@ -1249,6 +1256,9 @@ h5 {
   .buscarProyecto button {
     left: 1%;
     height: 32px;
+  }
+  header a, header button {
+    margin-left: 27px;
   }
   header img {
     height: 150px;

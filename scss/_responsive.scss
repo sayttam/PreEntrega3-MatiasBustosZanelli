@@ -116,6 +116,15 @@
               margin-bottom: 50px;
           }
       }
+
+      .acercaDe {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      footer {
+          font-size: 15px;
+      }
   }
 
   @media (min-width: 401px) and (max-width: 576px) {
@@ -166,8 +175,16 @@
           }
       }
 
-      header img {
-          height: 150px;
+      header {
+        a, button {
+            margin-left: 27px;
+        }
+
+        
+
+          img {
+              height: 150px;
+          }
       }
 
       .calendario {
@@ -227,9 +244,11 @@
       }
 
       .acercaDe {
-        flex-direction: column;
-        text-align: center;
+          flex-direction: column;
+          text-align: center;
       }
+
+
   }
 
   @media (min-width: 577px) and (max-width: 768px) {
