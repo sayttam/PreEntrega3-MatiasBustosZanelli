@@ -1029,9 +1029,11 @@ h5 {
 }
 
 .carouselReportes {
-  padding: 30px;
   position: relative;
-  bottom: 150px;
+  margin-top: 100px;
+  padding: 20px;
+  position: relative;
+  bottom: 100px;
 }
 
 .formContacto {
@@ -1374,7 +1376,7 @@ h5 {
     grid-template-columns: 1fr 1fr;
   }
   .generarReporte {
-    height: 500px;
+    height: 400px;
   }
   .generarReporte h3 {
     font-size: large;
@@ -1384,6 +1386,9 @@ h5 {
   }
   .generarReporte div:nth-child(4) {
     margin-bottom: 50px;
+  }
+  .carouselReportes {
+    padding: 50px;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {

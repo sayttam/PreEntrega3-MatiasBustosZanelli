@@ -324,7 +324,7 @@
       }
 
       .generarReporte {
-          height: 500px;
+          height: 400px;
 
           h3 {
               font-size: large;
@@ -338,6 +338,10 @@
               margin-bottom: 50px;
           }
       }
+
+      .carouselReportes {
+        padding: 50px;
+    }
   }
 
   @media (min-width: 769px) and (max-width: 992px) {
